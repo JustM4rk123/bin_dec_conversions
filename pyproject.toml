@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "bin-dec-conversions"
+description = "Python package that performs conversions with binary and decimal numbers"
+version = "1.0.0"
+requires-python = ">=3.10"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["binary", "decimal", "conversions"]
+authors = [
+    {name = "Marco S. Tornabene"}
+]
+dependencies = ["questionary"]
+
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "pytest",
+]
+
+[project.urls]
+Homepage = "https://github.com/JustM4rk123/bin-dec-conversions"
+Issues = "https://github.com/JustM4rk123/bin-dec-conversions/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[project.scripts]
+bin-dec-conversions = "bin_dec_conversions.cli:main"
