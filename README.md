@@ -88,7 +88,7 @@ You can choose *Binary to decimal*, *Decimal to binary* (with an optional width)
 Clone the repository and install the package in editable mode with the development dependencies:
 
 ```bash
-git clone https://github.com/<your-user>/bin-dec-conversions.git
+git clone https://github.com/JustM4rk123/bin-dec-conversions.git
 cd bin-dec-conversions
 pip install -e ".[dev]"
 ```
