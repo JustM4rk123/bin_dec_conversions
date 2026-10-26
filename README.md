@@ -28,10 +28,10 @@ pip install bin-dec-conversions
 ```python
 from bin_dec_conversions import binary_to_decimal, decimal_to_binary
 
-binary_to_decimal("1010")      # 10
-decimal_to_binary(10)          # "1010"
-decimal_to_binary(10, 8)       # "00001010"  (zero-padded to 8 digits)
-decimal_to_binary(5, 2)        # "101"       (width is a minimum, never truncates)
+binary_to_decimal("1010")  # 10
+decimal_to_binary(10)  # "1010"
+decimal_to_binary(10, 8)  # "00001010"  (zero-padded to 8 digits)
+decimal_to_binary(5, 2)  # "101"       (width is a minimum, never truncates)
 ```
 
 | Function | Description |
